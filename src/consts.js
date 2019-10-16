@@ -17,6 +17,6 @@ exports.DEAFAULT_LANGUAGE = "zh_CN";
 exports.SUPPORTED_LANGUAGES = (() => {
     let languages = fs.readdirSync(path.join(__dirname, 'languages'))
         .map(file => file.split(".")[0]);
-    console.log(languages);
+
     return languages;
 })()
